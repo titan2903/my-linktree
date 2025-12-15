@@ -3,125 +3,169 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description"
+        content="Titanio Yudista - Software Engineer. Connect with me on LinkedIn, GitHub, and more.">
+    <meta name="theme-color" content="#0f0c29">
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="logo/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon.png">
     <link rel="icon" href="assets/logo/favicon.png" type="image/webp">
-    <title>Titan Linktree</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <title>Titanio Yudista | Linktree</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Snowfall Background Animation -->
-    <section class="animated-background">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
-    <!-- End of Snowfall Background Animation -->
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
 
-    <div class="min-h-full flex-h-center" id="background_div">
-        <input type="hidden" value="https://bio.link" id="app-url">
-        <input type="hidden" value="null" id="is-featured">
-        <canvas id="bg-canvas" class="background-overlay"></canvas>
-        </input>
-        </input>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
 
-        <div class="mt-48 page-full-wrap relative ">
-            <input type="hidden" value="creator-page" id="page-type">
-            <img class="display-image m-auto" data-src="assets/images/0284.jpg" src="assets/images/0284.jpg"
-                alt="[Your photo alt]" />
-            <h2 class="page-title page-text-color page-text-font mt-16 text-center">TITANIO YUDISTA</h2>
-
-            <div class="mt-24">
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://www.linkedin.com/in/titanio" data-id="261652" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/linkedin.png" src="assets/logo/linkedin.png"
-                            alt="LinkedIn" />
-                        <span class=" item-title text-center">LinkedIn</span>
-                    </a>
-                </div>
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://drive.google.com/drive/folders/1aDfecYkZhQHG3uThYs92SMfdkBrFJpQc?usp=sharing"
-                        data-id="261685" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/Google_Drive_Logo.png"
-                            src="assets/logo/Google_Drive_Logo.png" alt="Google Drive" />
-                        <span class=" item-title text-center">Google Drive</span>
-                    </a>
-                </div>
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://github.com/titan2903"
-                        data-id="261685" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/github.png" src="assets/logo/github.png"
-                            alt="GitHub" />
-                        <span class=" item-title text-center">GitHub</span>
-                    </a>
-                </div>
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://www.credly.com/users/titanio-yudista" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/credly.png" src="assets/logo/credly.png"
-                            alt="Credly" />
-                        <span class=" item-title text-center">Credly</span>
-                    </a>
-                </div>
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://www.hackerrank.com/profile/titanioy98" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/hackerrank.png"
-                            src="assets/logo/hackerrank.png" alt="HackerRank" />
-                        <span class=" item-title text-center">HackerRank</span>
-                    </a>
-                </div>
-                <!-- <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="[Link]" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/logo/replit.png" src="assets/logo/replit.png" alt="Replit"/>
-                            <span class=" item-title text-center">Replit</span>
-                        </a>
-                    </div> -->
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://www.instagram.com/t1tan.io" data-id="261685" data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/instagram.png"
-                            src="assets/logo/instagram.png" alt="Instagram" />
-                        <span class=" item-title text-center">Instagram</span>
-                    </a>
-                </div>
-                <!-- <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://www.facebook.com/profile.php?id=100018326026212" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/logo/facebook.png" src="assets/logo/facebook.png" alt="Facebook"/>
-                            <span class=" item-title text-center">Facebook</span>
-                        </a>
-                    </div>                     -->
-                <div class="page-item-wrap relative">
-                    <div class="page-item flex-both-center absolute"></div>
-                    <a target="_blank" class="page-item-each py-10 flex-both-center"
-                        href="https://certopus.com/wallet/6430ecfed9969ff4b435541f19f052f2" data-id="261685"
-                        data-type="page_item">
-                        <img class="link-each-image" data-src="assets/logo/certopus.png" src="assets/logo/certopus.png"
-                            alt="Certopus" />
-                        <span class=" item-title text-center">Certopus</span>
-                    </a>
-                </div>
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <div class="profile-image-wrapper">
+                <img class="profile-image" src="assets/images/0284.jpg" alt="Titanio Yudista">
+                <div class="profile-glow"></div>
             </div>
+            <h1 class="profile-name">TITANIO YUDISTA</h1>
+            <p class="profile-bio">Software Engineer • Cloud Enthusiast</p>
         </div>
-    </div>
-</body>
 
-<!--
-    A different snowfall    
-    <script  src="assets/js/snowfall.js"></script>
-    -->
+        <!-- Links Section -->
+        <nav class="links-container" aria-label="Social Links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/titanio" target="_blank" rel="noopener noreferrer" class="link-card"
+                style="--delay: 0">
+                <div class="link-icon">
+                    <img src="assets/logo/linkedin.png" alt="">
+                </div>
+                <span class="link-text">LinkedIn</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Google Drive -->
+            <a href="https://drive.google.com/drive/folders/1aDfecYkZhQHG3uThYs92SMfdkBrFJpQc?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="link-card" style="--delay: 1">
+                <div class="link-icon">
+                    <img src="assets/logo/Google_Drive_Logo.png" alt="">
+                </div>
+                <span class="link-text">Google Drive</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/titan2903" target="_blank" rel="noopener noreferrer" class="link-card"
+                style="--delay: 2">
+                <div class="link-icon">
+                    <img src="assets/logo/github.png" alt="">
+                </div>
+                <span class="link-text">GitHub</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Credly -->
+            <a href="https://www.credly.com/users/titanio-yudista" target="_blank" rel="noopener noreferrer"
+                class="link-card" style="--delay: 3">
+                <div class="link-icon">
+                    <img src="assets/logo/credly.png" alt="">
+                </div>
+                <span class="link-text">Credly</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- HackerRank -->
+            <a href="https://www.hackerrank.com/profile/titanioy98" target="_blank" rel="noopener noreferrer"
+                class="link-card" style="--delay: 4">
+                <div class="link-icon">
+                    <img src="assets/logo/hackerrank.png" alt="">
+                </div>
+                <span class="link-text">HackerRank</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/t1tan.io" target="_blank" rel="noopener noreferrer" class="link-card"
+                style="--delay: 5">
+                <div class="link-icon">
+                    <img src="assets/logo/instagram.png" alt="">
+                </div>
+                <span class="link-text">Instagram</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Certopus -->
+            <a href="https://certopus.com/wallet/6430ecfed9969ff4b435541f19f052f2" target="_blank"
+                rel="noopener noreferrer" class="link-card" style="--delay: 6">
+                <div class="link-icon">
+                    <img src="assets/logo/certopus.png" alt="">
+                </div>
+                <span class="link-text">Certopus</span>
+                <div class="link-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17L17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </div>
+            </a>
+        </nav>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="heart">❤</span> by Titanio</p>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/particles.js"></script>
+</body>
 
 </html>
